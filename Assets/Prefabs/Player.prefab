@@ -33,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4486144812583137988
 SpriteRenderer:
@@ -103,7 +103,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 15297666fc354534aa728c9072435712, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -130,8 +130,8 @@ MonoBehaviour:
   _jumpHeight: 3.48
   _gcOffset: {x: 0, y: -0.54}
   _gcSize: {x: 0.72, y: 0.19}
-  _isGrounded: 0
-  _direction: 0
+  _dashDistance: 0
+  _dashDelay: 0
 --- !u!61 &3567531457220755170
 BoxCollider2D:
   m_ObjectHideFlags: 0
