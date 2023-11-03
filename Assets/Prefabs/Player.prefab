@@ -33,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4486144812583137988
 SpriteRenderer:
@@ -130,8 +130,10 @@ MonoBehaviour:
   _jumpHeight: 3.48
   _gcOffset: {x: 0, y: -0.54}
   _gcSize: {x: 0.72, y: 0.19}
-  _dashDistance: 0
-  _dashDelay: 0
+  _dashDistance: 4.1
+  _dashDelay: 1.6
+  _downDashDistance: 0
+  _downDashDelay: 0
 --- !u!61 &3567531457220755170
 BoxCollider2D:
   m_ObjectHideFlags: 0
