@@ -132,8 +132,8 @@ MonoBehaviour:
   _gcSize: {x: 0.72, y: 0.19}
   _dashDistance: 4.1
   _dashDelay: 1.6
-  _downDashDistance: 0
-  _downDashDelay: 0
+  _downDashForce: 40
+  _downDashDelay: 16
 --- !u!61 &3567531457220755170
 BoxCollider2D:
   m_ObjectHideFlags: 0

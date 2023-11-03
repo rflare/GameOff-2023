@@ -21,7 +21,7 @@ public class PlayerContext : MonoBehaviour
 
 
     //These are just same as above, but for down dash
-    [SerializeField] float _downDashDistance;
+    [SerializeField] float _downDashForce;
     [SerializeField] float _downDashDelay;
 
 
@@ -115,7 +115,7 @@ public class PlayerContext : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.S) && _downDashCount <= 0)
         {
             _rb.velocity = Vector2.zero;
-            _rb.AddForce(Vector2.down * _downDashDistance, ForceMode2D.Impulse);
+            _rb.AddForce(Vector2.down * _downDashForce, ForceMode2D.Impulse);
         }
     }
 
