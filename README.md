@@ -14,6 +14,12 @@ ur also small
 
 you use sword
 
-infinite
+ok screw infinity
 
 2d platformer
+
+the things you fight are fish
+
+you fight fish and collect fish scales
+
+and sell scales
