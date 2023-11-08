@@ -161,4 +161,12 @@ public class PlayerMovement : MonoBehaviour
         _downDashCount -= Time.deltaTime / _downDashDelay;
         
     }
+
+
+
+    public void KnockBack(float enemyPosX)
+    {
+        Vector2 force = new Vector2(Mathf.Sign(transform.position.x - enemyPosX), 1) * 3;
+        _rigidbody.AddForce(force, ForceMode2D.Impulse);
+    }
 }

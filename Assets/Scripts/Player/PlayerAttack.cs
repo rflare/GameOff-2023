@@ -29,6 +29,7 @@ public class PlayerAttack : MonoBehaviour
         if(!Input.GetMouseButtonDown(0))
             yield break;
 
+        _attackObject.GetComponent<SpriteRenderer>().enabled = true;
 
         _attackCount = 1;
 
@@ -43,10 +44,9 @@ public class PlayerAttack : MonoBehaviour
 
         foreach(RaycastHit2D hit in hits)
         {
-            Debug.Log(hit.transform.name);
+            hit.transform.GetComponent<EnemyHealth>().health -= _damage;
         }
 
-        _attackObject.GetComponent<SpriteRenderer>().enabled = true;
         yield return new WaitForSeconds(_attackDuration);
         _attackObject.GetComponent<SpriteRenderer>().enabled = false;
     }
